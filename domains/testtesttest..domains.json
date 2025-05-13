@@ -1,0 +1,28 @@
+{
+    "description": "Project Description",
+    "domain": "is-not-a.dev",
+    "subdomain": "testtesttest",
+
+    "owner": {
+        "repo": "https://github.com/toegreg/register",
+        "email": "email@testtesttest.com"
+    },
+
+    "record": {
+        "A": ["1.1.1.1", "1.0.0.1"],
+        "AAAA": ["::1", "::2"],
+        "CNAME": "testtesttest.com",
+        "MX": ["mx1.testtesttest.com", "mx2.testtesttest.com"],
+        "TXT": ["testtesttest_verification=1234567890"],
+        "CAA": [
+            { "flags": 0, "tag": "issue", "value": "letsencrypt.org" },
+            { "flags": 0, "tag": "issuewild", "value": "sectigo.com" }
+        ],
+        "SRV": [
+            { "priority": 10, "weight": 60, "port": 5060, "target": "sipserver.testtesttest.com" },
+            { "priority": 20, "weight": 10, "port": 5061, "target": "sipbackup.testtesttest.com" }
+        ]
+    },
+
+    "proxied": false
+}
